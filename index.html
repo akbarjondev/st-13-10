@@ -1,12 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Day10</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Day10</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center h2">Calculator</h1>
+
+      <div class="row">
+        <div class="col-3">
+          <input id="number1" type="number" class="form-control" required autocomplete>
+        </div>
+        <div class="col-3">
+          <select id="operation" class="form-select">
+            <option selected disabled>Tanlang</option>
+            <option value="+">+ amali</option>
+            <option value="-">- amali</option>
+            <option value="*">* amali</option>
+            <option value="/">/ amali</option>
+            <option value="**">** amali</option>
+          </select>
+        </div>
+        <div class="col-3">
+          <input id="number2" type="number" class="form-control" required autocomplete>
+        </div>
+        <div class="col-3">
+          <button id="button" class="btn btn-primary">Calculate</button>
+        </div>
+      </div>
+      
+      <div id="result" class="display-1 mt-5 text-center">...</div>
+    </div> <!-- End of conatiner -->
+    
+    <!-- <input type="button" value="1" id="" class="form-control"> -->
+    <script src="./js/main.js"></script>
+  </body>
 </html>
